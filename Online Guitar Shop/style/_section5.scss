@@ -1,0 +1,62 @@
+.section-5{
+    width: 100%;
+    height: 100vh;
+}
+
+.music{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: 480px;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+    padding-top: 50px;
+    height: auto;
+    img{
+        width: 100%;
+        max-width: 400px;
+        height: 480px;
+        display: block;
+    }
+
+    .bottom{
+        padding: 13px;
+        background: #252525;
+        border-radius: 0px 0px 10px 10px;
+        p{
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+            color: #FFFFFF;
+        }
+
+        span{
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 130%;
+            color: #C4C4C4;
+            line-height: 40px;
+        }
+    }
+}
+
+
+
+@media (max-width:700px){
+    .section-5{
+        height: auto;
+        padding: 0;
+        margin: 0;
+        .music{
+            display: flex;
+            flex-direction: column;
+            object-fit: cover;
+            padding: 24px;
+        }
+    }
+}

@@ -1,0 +1,542 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  padding: 55px 70px;
+  height: auto;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 40px;
+}
+header .logo img {
+  width: 40px;
+  height: 40px;
+}
+header .logo span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+header .links ul {
+  display: flex;
+  gap: 56px;
+}
+header .links ul a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #FCFCFC;
+}
+header .left-logo {
+  margin-left: auto;
+}
+header .manu {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 63px 24px;
+  }
+  header .links,
+header .left-logo {
+    display: none;
+  }
+  header .manu {
+    display: block;
+    margin-left: auto;
+  }
+}
+.section-1 {
+  background-image: url(../assets/backimg.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: 70%;
+}
+.section-1 h1 {
+  width: 100%;
+  max-width: 579px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  position: relative;
+  top: 285px;
+  left: 88px;
+}
+
+@media (max-width: 700px) {
+  .section-1 h1 {
+    font-size: 32px;
+    max-width: 100%;
+    left: 0;
+    text-align: center;
+    padding: 0 24px;
+  }
+}
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+}
+.section-2 .free-lesson {
+  background-image: url(../assets/next-back.png);
+  width: 90%;
+  max-width: 1264px;
+  height: 280px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 35px 20px 40px 20px;
+}
+.section-2 .free-lesson span {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.section-2 .free-lesson p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 149%;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 5px;
+}
+.section-2 .free-lesson button {
+  padding: 8px 16px;
+  width: 125px;
+  height: 34px;
+  background: #FF753A;
+  border-radius: 32px;
+  border: none;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+.section-2 .space {
+  position: relative;
+  bottom: 90px;
+}
+.section-2 h3 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #505050;
+}
+.section-2 .guitar-row {
+  display: flex;
+  padding: 34px 88px;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  bottom: 30px;
+}
+.section-2 .guitar-box {
+  background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+  width: calc(33.3333333333% - 32px);
+  min-width: 300px;
+  border-radius: 10px;
+  width: 400px;
+}
+.section-2 .guitar-info {
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 10px 10px;
+  height: auto;
+  border: solid 1px rgba(128, 128, 128, 0.636);
+  box-shadow: #252525;
+  border-top: none;
+}
+.section-2 .guitar-info .guitar-name-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.section-2 .guitar-info .guitar-name-price .guitar-name {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #252525;
+}
+.section-2 .guitar-info .guitar-name-price .guitar-price {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #252525;
+}
+.section-2 .guitar-info .guitar-description {
+  display: flex;
+  padding-left: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #767676;
+}
+.section-2 .guitar-info .guitar-color {
+  display: flex;
+  padding: 10px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  text-align: right;
+  color: #505050;
+}
+.section-2 .guitar-info .guitar-color p {
+  border: solid 1px gray;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .section-2 {
+    height: auto;
+  }
+  .section-2 .free-lesson {
+    width: auto;
+    width: 90%;
+    max-width: 328;
+    height: 168px;
+    border-radius: 10px;
+  }
+  .section-2 .free-lesson span {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .section-2 .free-lesson p {
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 149%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+.section-3 {
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  text-align: center;
+  background: #ECECEC;
+}
+.section-3 nav {
+  padding-top: 88px;
+}
+.section-3 h3 {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #505050;
+}
+.section-3 .guitar-row {
+  display: flex;
+  padding: 34px 88px;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  padding-top: 90px;
+}
+.section-3 .guitar-box {
+  background: #FFFFFF;
+  width: calc(33.3333333333% - 32px);
+  min-width: 300px;
+  border-radius: 10px;
+  width: 400px;
+}
+.section-3 .guitar-info {
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 10px 10px;
+  height: auto;
+}
+.section-3 .guitar-info .guitar-name-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.section-3 .guitar-info .guitar-name-price .guitar-name {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #252525;
+}
+.section-3 .guitar-info .guitar-name-price .guitar-price {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #252525;
+}
+.section-3 .guitar-info .guitar-description {
+  display: flex;
+  padding-left: 10px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #767676;
+}
+.section-3 .guitar-info .guitar-color {
+  display: flex;
+  padding: 10px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 12px;
+  text-align: right;
+  color: #505050;
+}
+.section-3 .guitar-info .guitar-color p {
+  border: solid 1px gray;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .section-3 {
+    height: auto;
+  }
+}
+.section-4 {
+  width: 100%;
+  height: 100vh;
+}
+.section-4 nav {
+  text-align: center;
+  padding-top: 70px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  text-align: center;
+  color: #505050;
+}
+.section-4 .guiter-players {
+  display: flex;
+  padding: 10px 88px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-4 .about-guiter {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 616px 616px;
+  grid-template-rows: 400px;
+  justify-content: center;
+  padding-top: 32px;
+  flex-wrap: wrap;
+  height: auto;
+  min-width: 300px;
+}
+.section-4 .about-guiter img {
+  width: 100%;
+  max-width: 616px;
+  height: 400px;
+  display: block;
+}
+.section-4 .about-guiter .bottom {
+  padding: 15px;
+  background: #252525;
+  border-radius: 0px 0px 10px 10px;
+}
+.section-4 .about-guiter .bottom p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.section-4 .about-guiter .bottom span {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #C4C4C4;
+  line-height: 40px;
+}
+
+@media (max-width: 700px) {
+  .section-4 {
+    height: auto;
+  }
+  .section-4 .about-guiter {
+    display: flex;
+    flex-direction: column;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.section-5 {
+  width: 100%;
+  height: 100vh;
+}
+
+.music {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: 480px;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 300px;
+  padding-top: 50px;
+  height: auto;
+}
+.music img {
+  width: 100%;
+  max-width: 400px;
+  height: 480px;
+  display: block;
+}
+.music .bottom {
+  padding: 13px;
+  background: #252525;
+  border-radius: 0px 0px 10px 10px;
+}
+.music .bottom p {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.music .bottom span {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  color: #C4C4C4;
+  line-height: 40px;
+}
+
+@media (max-width: 700px) {
+  .section-5 {
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .section-5 .music {
+    display: flex;
+    flex-direction: column;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 24px;
+  }
+}
+footer {
+  background: #505050;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .learn-more {
+  display: flex;
+  margin: 50px;
+  gap: 48px;
+}
+footer .learn-more .bottom-links,
+footer .learn-more .bottom-links-2 {
+  display: flex;
+  flex-direction: column;
+}
+footer .learn-more .bottom-links a,
+footer .learn-more .bottom-links-2 a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #FFFFFF;
+  line-height: 29px;
+}
+footer .st-linksla {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+footer .st-linksla span {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+footer .botom {
+  margin: 100px 50px;
+}
+footer .apps {
+  display: flex;
+  margin-left: auto;
+}
+
+@media (max-width: 700px) {
+  footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  footer .st-linksla {
+    display: none;
+  }
+  footer .bottom-links-2 a {
+    display: none;
+  }
+  footer .apps {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,173 @@
+
+.section-2{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    text-align: center;
+    .free-lesson {
+        background-image: url(../assets/next-back.png);
+        width: 90%;
+        max-width: 1264px;
+        height: 280px;
+        text-align: center;
+        color: #FFFFFF;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 35px 20px 40px 20px;
+
+        span {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 46px;
+            line-height: 120%;
+            text-align: center;
+            color: #FFFFFF;  
+        }
+
+        p {
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 149%;
+            text-align: center;
+            color: #FFFFFF;
+            padding-top: 5px;
+        }
+
+        button {  
+            padding: 8px 16px;
+            width: 125px;
+            height: 34px;
+            background: #FF753A;
+            border-radius: 32px;
+            border: none;
+            color: #FFFFFF;
+            font-family: sans-serif;
+            margin-top: 20px;
+        }
+    }
+
+    .space{
+        position: relative;
+        bottom: 90px;
+    }
+    h3{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        color: #505050;
+    }
+
+    .guitar-row{
+        display: flex;
+        padding: 34px 88px;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .guitar-box{
+        background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
+        width: calc(100% / 3 - 32px);
+        min-width: 300px;
+        border-radius: 10px;
+        width: 400px;
+    }
+
+    .guitar-info{
+        background-color: #FFFFFF;
+        border-radius: 0px 0px 10px 10px;
+        height: auto;
+        border: solid 1px rgba(128, 128, 128, 0.636);
+        box-shadow: #252525;
+        border-top: none;
+        .guitar-name-price {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            .guitar-name {
+                font-family: sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 130%;
+                color: #252525;
+            }
+
+            .guitar-price {
+                font-family: sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                color: #252525;
+            }
+        }
+        .guitar-description{
+            display: flex;
+            padding-left: 10px;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;  
+            color: #767676;
+        }
+        .guitar-color{
+            display: flex;
+            padding: 10px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 12px;
+            text-align: right;
+            color: #505050;
+            p{
+                border: solid 1px gray;
+                padding: 3px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:700px){
+    .section-2{
+        height: auto;
+        .free-lesson{
+            width: auto;
+            width: 90%;
+            max-width: 328;
+            height: 168px;
+            border-radius: 10px;
+
+            span{
+                font-family: sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 120%;
+                text-align: center; 
+                color: #FFFFFF;
+            }
+
+            p{
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 149%;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
